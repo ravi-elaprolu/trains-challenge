@@ -113,6 +113,9 @@ trips? <30 distance CC  => 7
 Note that the application supports Spanish and English locales, so depending on
 system settings, reports and errors will be reported on different languages.
 
+We can also force the JVM to use a specific locale by adding -Duser.language=es to the java commandline.
+For example: java -Duser.language=es -jar target/graph-challenge-1.0-SNAPSHOT.jar graph-input.txt commands.txt
+
 3. Approach
 The solution to the problem contains 3 different aspects. The commands are read and a given Action object is instantiated to carry on a specific analysis. The 3 main actions are implemented by the following classes:
 
